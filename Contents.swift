@@ -27,11 +27,8 @@ let quote = "He said, \"You can make a difference.\""
 
 print(quote)
 
+// How to make multi-lined strings
 
-
-
-
-
-
-
-
+let tynosonPoem = """
+We are not now that old strength, which in old days, moved Earth and Heaven; that which we are, we are...
+"""

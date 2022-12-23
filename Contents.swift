@@ -184,3 +184,24 @@ let fahrenheitConversionMessage = "The temperature is \(fahrenheitTemperature) d
 print(celciusConversionMessage)
 print(fahrenheitConversionMessage)
 
+// MARK: How to Use Arrays to Store Ordered Data
+
+// Creating arrays looks like this:
+
+var daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"]
+
+let wholeNumbers = [13, 94, 3, 16, 24]
+
+let grades = [50.6, 78.5, 83.1, 97.4]
+
+// Reading values out of Arrays using Indices:
+
+print(grades[1])
+grades[1]
+grades[3]
+print(grades[3])
+
+print(daysOfTheWeek.append("Sunday"))
+print(daysOfTheWeek.append("Monday"))
+print(daysOfTheWeek.append("Tuesday"))
+print(daysOfTheWeek.append("Wednsday"))

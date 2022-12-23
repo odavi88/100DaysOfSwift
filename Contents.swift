@@ -278,3 +278,68 @@ albums.append("Spain")
 albums.sort()
 albums.reversed()
 albums
+
+
+// MARK: How to Store and Find Data in Dictionaries
+
+
+// Where using Arrays to store data can get messy and break our code:
+
+//var employee = ["Peter Griffin", "Manager", "Quohog"]
+//
+//print("Name: \(employee[0])")
+//
+//employee.count
+//employee
+//employee; "Title: \([1])"
+//employee; "Location \([2])"
+//employee.remove(at: 2)
+
+// Here is the solution:
+
+// Dictionaries allow us to decided how we store our data, how we look for the data and where our data is.
+
+var employee = [
+    "Name": "Peter Griffin",
+    "Title": "Manager",
+    "Location": "Quohog"
+
+]//<--- String/String Dictionary
+
+employee["Name"]
+employee["Title"]
+employee["Location"]
+
+var graduatedStudents = [
+    "Eric": false,
+    "Donna": true,
+    "Ivy": true,
+    "Richardo": true,
+    "Omar": true,
+    "Amber": false
+
+
+] //<--- String/Bool Dicitonay
+
+let olympics = [
+    "Sao Paulo": 1988,
+    "Cairo": 1967,
+    "Detroit": 2003,
+    "Beijing": 2008,
+    "Paris": 2012
+
+
+]
+
+olympics["Cairo"]
+olympics["Detroit"]
+
+// NOTE: You can create an empty Dicitonary and store whatever values you need:
+
+var countryCapitals = [String: String]()
+
+countryCapitals ["France"] = "Paris"
+countryCapitals ["United States"] = "Washington D.C."
+countryCapitals ["United Kingdom"] = "London"
+
+// Duplicate keys cannot exist. It will overwrite the key.

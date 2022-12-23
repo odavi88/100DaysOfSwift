@@ -205,3 +205,76 @@ print(daysOfTheWeek.append("Sunday"))
 print(daysOfTheWeek.append("Monday"))
 print(daysOfTheWeek.append("Tuesday"))
 print(daysOfTheWeek.append("Wednsday"))
+
+// Creating an open Array to and then appending, or adding values in.
+
+var gpas = Array<Double>() //<--- the "()" allows you to customize
+
+gpas.append(69.8)
+gpas.append(34.3)
+gpas.append(82.8)
+gpas.append(91.5)
+
+
+var albums = Array<String>()
+
+albums.append("King Kunta")
+albums.append("Green in Blue")
+albums.append("Giant Steps")
+
+var colors = [String]() //<---- another and more common way to write an empty arrray.
+
+colors.append("blue")
+colors.append("red")
+colors.append("yellow")
+
+colors[2]
+
+var continents = ["Africa"] //<---- another and more common way to write an empty arrray.
+
+continents.append("Europe")
+continents.append("Asia")
+continents.append("South America")
+
+continents[1]
+
+// NOTE: you can count how many pieces of data are in your array:
+
+continents.count
+colors.count
+albums.count
+
+// NOTE: you can remove a specific piece of data from an array or clear the whole array:
+
+albums.remove(at: 0)
+albums.count
+
+colors.removeAll()
+colors.count
+colors.append("blue")
+
+continents.remove(at: 2)
+continents.count
+
+// NOTE: you can check and array to see if it contain specific data:
+
+albums.contains("Gaurdians of the Galaxy, Vol. 1")
+colors.contains("blue")
+continents.contains("Europe")
+
+// NOTE: you can sort the data in an array:
+
+albums.sorted()
+colors.sorted()
+continents.sorted()
+
+// NOTE: you can reverse the order of the data in your array:
+
+albums
+albums.reversed
+let reversedAlbums = albums.reversed()
+
+albums.append("Spain")
+albums.sort()
+albums.reversed()
+albums

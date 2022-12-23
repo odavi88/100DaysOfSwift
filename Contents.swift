@@ -97,4 +97,37 @@ print(theEndOfTheWorld)
 theEndOfTheWorld.toggle()
 print(theEndOfTheWorld)
 
+// MARK: How to Join Strings Together
+
+let firstPart = "Hello,"
+
+let secondPart = "world!"
+
+let statement = firstPart + secondPart
+
+let people = "Haters"
+let action = "hate"
+
+let lyric = people + "gonna" + action //<--- the fact that the "+" sign having the ability to do different things depending on how its used is called "Operator Overloading"
+
+// Using String Interperlation
+
+let fullStatement = "\(firstPart) \(secondPart)"
+
+let characterName = "Tracer"
+let catchPhrase = "\"Hello, love! The calvery's here!\""
+
+let tracersCatchPhrase = "\(characterName) enjoys saying \(catchPhrase)."
+print(tracersCatchPhrase)
+
+let firstName = "Omar"
+let age = 29
+
+let introduction = "Hello! My name is \(firstName) and I'm \(age)."
+print(introduction)
+
+
+// NOTE: You can pass in calculations into your String Interperlation
+
+print("1 plus 2 is \(1 + 2).")
 

@@ -153,3 +153,34 @@ print("1 plus 2 is \(1 + 2).")
 //
 // NOTE: Use String Interpolation to most efficiently combine strings and/or other data types, like Int, Bool, or Doubles.
 
+
+
+
+
+// MARK: Checkpoint for Day 1
+
+// Creating a Celcius to Fahrenheit Converter
+
+    // Step 1: Creates a constant that holds any temperature in Celcius
+    //
+    // Step 2: Converts that temperature to Fahrenheit (multiply by 9, divide by 5 then add 32.
+    //
+    // Step 3: Prints the result showing both Celcius and Fahrenheit.
+
+// MARK: Celcius to Fahrenheit here
+let celsiusTemperature: Double = 30.0
+
+let celsiusToFahrenheit = celsiusTemperature * 9 / 5 + 32
+
+let celciusConversionMessage = "The temperature is \(celsiusTemperature) degrees Celsius or \(celsiusToFahrenheit) degrees Fahrenheit."
+
+// MARK: Fahrenheit to Celcius here
+let fahrenheitTemperature: Double = 0.0
+
+let fahrenheitToCelsius = fahrenheitTemperature - 32 * 5 / 9
+
+let fahrenheitConversionMessage = "The temperature is \(fahrenheitTemperature) degrees Fahrenheit or \(fahrenheitToCelsius) degrees Celsius."
+
+print(celciusConversionMessage)
+print(fahrenheitConversionMessage)
+

@@ -42,3 +42,7 @@ print(tynosonPoem.count)
 let phrase = "You know spys– a bunch of bitchy little girls."
 
 print(phrase.uppercased())
+
+// Using "Has prefixes" with strings
+
+print(tynosonPoem.hasPrefix("We are not"))

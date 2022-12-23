@@ -36,3 +36,9 @@ We are not now that old strength, which in old days, moved Earth and Heaven; tha
 // How to read the length of a string
 
 print(tynosonPoem.count)
+
+// How to make a string upppercased
+
+let phrase = "You know spys– a bunch of bitchy little girls."
+
+print(phrase.uppercased())

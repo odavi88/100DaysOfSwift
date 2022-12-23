@@ -32,3 +32,7 @@ print(quote)
 let tynosonPoem = """
 We are not now that old strength, which in old days, moved Earth and Heaven; that which we are, we are...
 """
+
+// How to read the length of a string
+
+print(tynosonPoem.count)

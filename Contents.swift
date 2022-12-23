@@ -73,3 +73,28 @@ let number = 4_051
 
 print(number.isMultiple(of: 3))
 print(number.isMultiple(of: 2))
+
+// MARK: How to Store Truth with Booleans
+
+let snowStorm = true
+
+let gameOver = false
+
+var multiple = 24.isMultiple(of: 4) //Note: this can either be true or false.
+
+// Using Exclamation Marks with Booleans
+
+var statementIsTrue = false
+
+statementIsTrue = !statementIsTrue // <--- This statement is true.
+
+// Using .toogle function with booleans
+
+var theEndOfTheWorld = true
+print(theEndOfTheWorld)
+theEndOfTheWorld.toggle()
+print(theEndOfTheWorld)
+theEndOfTheWorld.toggle()
+print(theEndOfTheWorld)
+
+

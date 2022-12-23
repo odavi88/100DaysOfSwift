@@ -131,3 +131,25 @@ print(introduction)
 
 print("1 plus 2 is \(1 + 2).")
 
+
+// MARK: Summary so far...
+
+// NOTE: Swift allows us to create constants using "let" and variables using "var".
+//
+// use "let" over "var" for optimized code and to cut down on errors later in your code.
+//
+// NOTE: Swift's strings contain text, from short to long novels and include helpful dote functions to modify your text.
+//
+// To make a new string use double quotes at the start and end of the text.
+// NOTE: if you want multi-lined strings use three quotes at the start and end of the text.
+//
+// NOTE: To store whole numbers use Intergers, or Int.
+// Intergers have fucntionality to like ".isMultipleOf"
+//
+// NOTE: To store Decimal numbers use Double.
+    //WARNING: Dont use Doubles to track money as they are not the most acurate way to store that data.
+//
+// NOTE: To store True or False data, use Booleans, or Bool.
+//
+// NOTE: Use String Interpolation to most efficiently combine strings and/or other data types, like Int, Bool, or Doubles.
+

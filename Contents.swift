@@ -13,6 +13,14 @@ name = "Leia"
 
 let character = "Anikin"
 
+print(character)
+print(name)
+print(greeting)
+
+// Use Constants over Variables when possible to optimize your code and stops us from changing values on accident.
+
+
+
 
 
 

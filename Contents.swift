@@ -46,3 +46,30 @@ print(phrase.uppercased())
 // Using "Has prefixes" with strings
 
 print(tynosonPoem.hasPrefix("We are not"))
+
+
+// MARK: How to Store Whole Numbers
+
+var score = 10
+let reallyBig = 1_000_000_000
+
+let highScore = score + 1
+let lowScore = score - 1
+let doubledScore = score * 2
+let halvedScore = score / 2
+
+// MARK: How to use Compound Assignment Operators
+
+var counter = 10
+counter += 1
+counter += 1
+counter *= 2
+counter /= 2
+counter -= 1
+
+// MARK: How to dot funcitons with Intergers
+
+let number = 4_051
+
+print(number.isMultiple(of: 3))
+print(number.isMultiple(of: 2))

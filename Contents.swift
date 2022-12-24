@@ -409,3 +409,70 @@ var magicPlaneswalkers = Planeswalkers.karn
 
 magicPlaneswalkers = .jaceBeleren
 
+
+
+// MARK: How to Use Type Annotations
+
+// Putting a colon after the variable's name and adding the data type in between the colon and the assignment property (=) is called annotating.
+
+let playerName: String = "Danny"
+
+let luckyNumber: Int = 17
+
+let pi: Double = 3.141
+
+var isAuthenticated: Bool = true
+
+
+// Arrays
+var devices: [String] = ["FLOBOTS–Fight with Tools", "Spain"]
+
+var fibinocciSequence: [Int] = [
+    0,1,1,2,3,5,8,13,21,34,55,89
+]
+
+var array = [String]()//<----- to make an empty array
+
+// Dictionaries
+var userInfo: [String:String] = [
+    "user" : "odavi43",
+    "password": "password12467dw"
+]
+
+var causeEffect: [String:String] = [
+    "Beautiful day": "Go for a walk",
+    "Hungry": "Cook some food",
+    "Study well": "Ace the exam"
+]
+
+// Sets
+
+var beverages: Set<String> = ([
+    "Hot tea", "orange juice", "kool-aid", "pop"
+])
+
+var celsiusTemps: Set<Double> = ([
+    4.85, 30.45, 10.14, 26.78
+])
+
+// Enums
+
+enum UIStyle {
+    
+    case light, dark, system
+    
+}
+
+var style: UIStyle =  UIStyle.light//<---- it knows this is a UIStyle type because I'm refering to the type I created above with my Enum.
+
+style = .dark
+
+// MARK: When Should I Use Type Annotations
+
+// NOTE: you can declare a constant to have a certain data type before it has been initilized.
+
+let username: String
+// I can generate some complex code here...
+username = "odavi30@icloud.com"//<---- initialize here
+// I can generate some more complex code here...
+print(username)

@@ -367,3 +367,45 @@ actors
 print(actors)
 
 actors.contains("Matt Damon")
+
+
+
+// MARK: How to Create and Used Enums (Enumeration)
+
+// if we wanted to create a set of named values that we can create a use in our code.
+
+// PROBLEM: if we want allow our user to select a day of the week...
+
+//var selectedDay = "Monday"
+//
+//selectedDay = "Tuesday"
+//selectedDay = "January"<---- this code is fine until you break your own logic or make a syntatical error that could break you code. Also it is an inefficient way to approach this task.
+
+// If we want allow our user to select a day of the week lets try this...
+
+enum Weekday {
+    
+    case monday, tuesday, wednesday, thursday, friday
+    
+}
+
+var day = Weekday.tuesday
+day = .thursday
+
+day = .monday
+day = .friday
+day = .wednesday
+day = .thursday
+//Weekday.january<--- code won't work
+
+enum Planeswalkers {
+   
+    case jaceBeleren, karn, narset, terferi
+    
+    
+}
+
+var magicPlaneswalkers = Planeswalkers.karn
+
+magicPlaneswalkers = .jaceBeleren
+

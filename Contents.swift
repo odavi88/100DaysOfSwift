@@ -478,6 +478,9 @@ username = "odavi30@icloud.com"//<---- initialize here
 print(username)
 
 
+
+
+
 // MARK: RECAP Complex Data
 
 // Arrays store many values in one place and read them back out using interger indices.
@@ -538,5 +541,17 @@ dinner = .gumbo
 
 // By default Swift uses type inference to figure out what we'er storing, but sometimes we will use Type Annotation.
 // Helpful when we have missing data or we want to override Swift's choice
+
+
+
+// MARK: Checkpoint 2
+
+// INSTRUCTIONS:
+
+// Create and Array of Strings, then write some code that prints the number of items in the array and also the number of unique items in the array.
+
+var randomStrings: Set<String> = (["Wookies", "Raspberries", "Snow and ice", "Samsung smart TV"])
+
+print(randomStrings.count)
 
 

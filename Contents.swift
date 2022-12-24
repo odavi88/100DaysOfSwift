@@ -555,3 +555,57 @@ var randomStrings: Set<String> = (["Wookies", "Raspberries", "Snow and ice", "Sa
 print(randomStrings.count)
 
 
+
+
+
+// MARK: How to Check a Condition is True or False
+
+var gradeScore: Int = 81
+let speed = 88
+let astrologySign: String = "Gemini"
+
+if gradeScore > 80 {
+    print("Good job!")
+}
+
+if speed >= 75 {
+    print("Slow down!")
+}
+
+if astrologySign != "Aries" {
+    print("Thank goodness!")
+}
+
+
+let ourName = "Omar Davidson"
+let theirName = "Martin Dawson"
+
+if ourName > theirName {
+    print("Martin wins the prize.")
+} else {
+    print("Omar wins the prize.")
+}
+
+// If adding a number to an array makes it contain more than 3 items, remove the oldest number.
+var strictArray: [Int] = [1,2,3]
+strictArray.append(4)
+
+if strictArray.count > 3 {
+    strictArray.remove(at: 0)
+}
+
+print(strictArray)
+
+// if a user was asked to enter a name and types nothing at all, give them the default of anonymus.
+
+var usersName: String = ""
+
+if usersName.isEmpty {
+   usersName = "anonymuous"
+}
+    print("Welcome, \(usersName).")
+
+
+
+
+

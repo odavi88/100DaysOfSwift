@@ -476,3 +476,67 @@ let username: String
 username = "odavi30@icloud.com"//<---- initialize here
 // I can generate some more complex code here...
 print(username)
+
+
+// MARK: RECAP Complex Data
+
+// Arrays store many values in one place and read them back out using interger indices.
+//
+
+var everyDayCarries = ["utility knife", "phone", "wallet", "watch", "AirPods", "focusing stone"]
+
+everyDayCarries.sort()
+everyDayCarries
+everyDayCarries.count
+everyDayCarries.append("Apple work phone")
+
+var oddNumbers: [Int] = []
+
+oddNumbers.append(19)
+oddNumbers.append(3)
+oddNumbers.append(5)
+oddNumbers
+oddNumbers.sort()
+
+// Arrays must always be specialized, i.e they will only store one specific type of data.
+//
+
+
+// Dictionaries store many values, like Arrays. However, rather than using indices to read the values out they use Keys we specify.
+// Dictionaries must always be specialized, i.e they will only store one specific type of data for the key and for the value.
+//
+
+var palabras = [
+    "pescar": "verbo",
+    "taza": "sustantivo"
+]
+
+palabras.count
+palabras
+
+// Sets are yet another way to store data in one place and are specialized, but we don't choose their order.
+//
+
+var seasons: Set<String> = (["Winter", "Autumn", "Summer"])
+
+seasons.insert("Spring")
+
+// Enums allow is to create our own specific data types to handle a range of values that are specific to our program. I.e a list of acitons a user can preform, like a menu.
+//  Enums are very helpful for limiting data.
+//
+
+enum Menu {
+    
+    case hambuger, hotdog, fries, gumbo
+    
+}
+
+var dinner: Menu = .fries
+
+dinner = .gumbo
+
+
+// By default Swift uses type inference to figure out what we'er storing, but sometimes we will use Type Annotation.
+// Helpful when we have missing data or we want to override Swift's choice
+
+

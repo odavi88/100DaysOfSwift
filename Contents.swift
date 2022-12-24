@@ -343,3 +343,27 @@ countryCapitals ["United States"] = "Washington D.C."
 countryCapitals ["United Kingdom"] = "London"
 
 // Duplicate keys cannot exist. It will overwrite the key.
+
+
+
+// MARK: Using Sets For Fast Data Lookup
+
+// NOTE: This is the fastest way to collectng data in Swift. While they work similarly to Arrays, they dont care about the order you add things and you cannot make duplicates of data.
+
+
+var actors = Set([
+    
+    "Natelie Portman",
+    "Edris Elba",
+    "Matt Damon",
+    "Samuel L Jackson"
+
+])
+
+actors.insert("Tom Holland")
+
+actors
+actors
+print(actors)
+
+actors.contains("Matt Damon")

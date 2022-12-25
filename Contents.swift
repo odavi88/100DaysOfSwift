@@ -606,6 +606,184 @@ if usersName.isEmpty {
     print("Welcome, \(usersName).")
 
 
+// MARK: How to Check Multiple Conditions
+
+let personsAge = 16
+
+//if personsAge >= 18 {
+//
+//    print("You are eligible to vote.")
+//
+//}
+//
+//if age <= 18 {
+//    print("You are too young to vote.")
+//}
+
+// NOTE: While this code will run, this is not efficient code. These conditions are mutually exclusive.
+    // While these two condiitons refer to each other, we are asking Swift to check two things that can that stand alone.
+
+if personsAge >= 18 {
+    print("You're eligible to vote.")
+} else {
+    print("You're too young to vote.")
+}
+
+// If some one is 18 years or older they can vote. Because of the first statement it is implied that any person that fails to meet the criteria of the initial statement cannot vote
+
+
+let pleasantWeather = false
+
+if pleasantWeather == true {
+    print("Let's go outside.")
+} else {
+    print("Let's stay inside.")
+}
+
+// If the weather is in fact pleasant and we can go outside then we won't neeed to go any further through our logic. The "else" part of the statement acts as a default option in the event that the first condition "if pleasantWeather == false" occurs, which it does.
+
+var carBudget = 50_000
+let telsaPrice = 64_990
+
+carBudget = carBudget + 10_000
+carBudget = carBudget + 10_000
+
+
+
+if carBudget <= telsaPrice {
+    print("I'll save up a bit more.")
+} else if carBudget > telsaPrice {
+    print("Buy it!")
+}
+
+//  On line 645 and 646 I have two constants each with a different dollar amount. My carBudget starts out less than the asking price for a Tesla Model 3. So I've then created a conditional statement saying that if my carBudget is less than the teslaPrice I'll save up a bit more so I can increase my budget and get the car.
+
+
+// Next on line 648, I added an amount to my carbudget. However, I'm still short the asking teslaPrice.
+
+// Finally on line 649, I have the money to buy the Tesla!
+
+
+
+var redTeamsKills = 100
+var blueTeamsKills = 10
+
+
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+redTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+blueTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+redTeamsKills += 10
+
+
+var blueTeamsScore = blueTeamsKills
+var redTeamsScore = redTeamsKills
+
+// MARK: How Would I Setup A BlowOut Condition? I.E.: if blueTeamsScore is 50 points greater than redTeamsScore print("Blue Team is Crushing Red Team!")?
+
+
+if blueTeamsKills > redTeamsKills {
+    print("🎉 Blue Team is Winning! 🎉")
+} else if blueTeamsKills < redTeamsKills {
+    print("🎉 Red Team is Winning! 🎉")
+} else if blueTeamsKills == redTeamsKills {
+ print("It's All Tied Up!")
+}
+
+enum WeatherCondition {
+    case partlyCloudy, snow, fullSun, rainy, temporate
+    
+}
+
+// I created a weather condition enum that list the possible weather conditions possible in my scenario.
+//
+// Then I created a constant called weather, made the data type weatherCondtition and assigned it to rainy.
+//
+// Finally I created a conditional statement that if the weather was anything other fullSun, I'm not going outside, but if it is fullSun I'd like to have a barbeque.
+
+let weather: WeatherCondition = .rainy
+
+if weather != .fullSun {
+    print("Go outside? No thank you!")
+} else if weather == .fullSun {
+    print("Let's have a barbeque! 🥩")
+}
+
+// NOTE: You can also check multiple things at the same time using && or ||
+
+let primeNumber = 8
+let a = 1
+let b = 3
+let c = 4
+let bPlusC = b + c
+
+if a < primeNumber && b > a {
+    print("\(a) is less than \(primeNumber) and \(b) is greater than \(a).")
+} else if primeNumber > bPlusC || primeNumber > a {
+    print("\(primeNumber) is greater than both \(bPlusC) and \(a).")
+} else if c > a && bPlusC < primeNumber {
+    print("\(c) is greater \(a) and \(bPlusC) is less than \(primeNumber).")
+} else if a - primeNumber == bPlusC {
+    print("\(bPlusC) is equal to the \(a) minus \(primeNumber).")
+}
+
+enum TransportOption {
+    case helicopter, commercialPlane, luxuryCar, econCar, privatePlane, motorCycle, yacht, train, bicicle, scooter, starShip
+}
+
+var myTransportOptions: [TransportOption] = []
+
+myTransportOptions.append(.train)
+myTransportOptions.append(.econCar)
+myTransportOptions.append(.commercialPlane)
+myTransportOptions
+myTransportOptions.remove(at:0)
+myTransportOptions.remove(at:1)
+myTransportOptions.remove(at:0)
+myTransportOptions
+myTransportOptions.append(.privatePlane)
+myTransportOptions.append(.motorCycle)
+myTransportOptions.removeAll()
+myTransportOptions.append(.starShip)
+
+
+if myTransportOptions == [.yacht] || myTransportOptions == [.privatePlane] || myTransportOptions == [.luxuryCar] || myTransportOptions == [.helicopter] {
+    print("I'm fancy 🎩! ")
+} else if myTransportOptions == [.starShip] {
+    print("I'm interstellar 🚀!")
+} else if myTransportOptions == [.motorCycle] {
+  print("I'm living on the edge... 🏍️")
+} else {
+    print("I just need something to get from point A to B.")
+}
+
+myTransportOptions
+
+
+
 
 
 

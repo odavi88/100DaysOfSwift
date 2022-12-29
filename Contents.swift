@@ -524,19 +524,15 @@ var seasons: Set<String> = (["Winter", "Autumn", "Summer"])
 
 seasons.insert("Spring")
 
-// Enums allow is to create our own specific data types to handle a range of values that are specific to our program. I.e a list of acitons a user can preform, like a menu.
+// Enums allow you to create our own specific data types to handle a range of values that are specific to our program. I.e a list of acitons a user can preform, like a menu.
 //  Enums are very helpful for limiting data.
 //
 
-enum Menu {
-    
-    case hambuger, hotdog, fries, gumbo
-    
+enum Food {
+    case apple, fries, pizza, salad
 }
 
-var dinner: Menu = .fries
-
-dinner = .gumbo
+var foodSelect: Food = .apple
 
 
 // By default Swift uses type inference to figure out what we'er storing, but sometimes we will use Type Annotation.

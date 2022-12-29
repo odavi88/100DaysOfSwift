@@ -782,8 +782,24 @@ if myTransportOptions == [.yacht] || myTransportOptions == [.privatePlane] || my
 
 myTransportOptions
 
+// MARK: How to Use Switch Statements to Check Multiple Conditions
 
+enum WeatherType {
+    case snow, wind, sun, sleet, cloudy
+}
 
+var forecast: WeatherType = .cloudy
 
-
-
+switch forecast {
+    
+case .cloudy:
+    print("It may rain.")
+case .sleet:
+    print("Just stay inside.")
+case .snow:
+    print("Bring your umbrella.")
+case .wind:
+    print("Hold on to your hat!")
+case .sun:
+    print("Beautiful day!")
+}

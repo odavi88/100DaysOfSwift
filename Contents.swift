@@ -799,3 +799,63 @@ case .wind:
 case .sun:
     print("Beautiful day!")
 }
+
+
+enum VehicleType {
+    case xwing, tieFighter, landSpeeder, starDestroyer, hullFrighter
+}
+
+var vehicleSelection: VehicleType = .xwing
+
+switch vehicleSelection {
+    case .tieFighter:
+        print("You're an empirial fighter pilot.")
+    case .landSpeeder:
+        print("You like to scoot around town.")
+    case .hullFrighter:
+        print("You have a lot of stuff to transport.")
+    case .xwing:
+        print("You're a rebel fighter pilot.")
+    case .starDestroyer:
+        print("You like to drive in style.")
+
+}
+
+enum LightSaberColor {
+    case blue, red, green, purple, yellow, white, dark
+}
+
+var lightSaber: LightSaberColor = .red
+
+switch lightSaber {
+case .blue:
+    print("You're a Obi-wan or Anikin.")
+case .red:
+    print("You're Darth Bane or Darth Vader")
+case .green:
+    print("You're Yoda or Luke.")
+case .dark:
+    print("You're the Mandalorian.")
+case .purple:
+    print("You're Mace Windu or Revan.")
+case .yellow:
+    print("You're a jedi sentinel.")
+case .white:
+    print("You're Asoka Tano.")
+}
+
+
+let starWarsPlanets = "Hoth"
+
+switch starWarsPlanets {
+case "Degobah":
+    print("Say hi to Yoda for me.")
+case "Tatooine":
+    print("I hate sand.")
+case "Naboo":
+    print("Palpatine's home.")
+case "Courasant":
+    print("Capital of the galaxy.")
+default:
+    print("What planet are we on?")
+}

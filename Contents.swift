@@ -863,7 +863,7 @@ default:
 
 // MARK: How to Use the Ternary Conditional Operator for Quick Tests
 
-var trip = "Miami"
+var trip = "California"
 
 let isCaliBound = trip == "California" ? "Yes" : "No"
 
@@ -886,3 +886,91 @@ let birthYear = 2001
 let canDrink = birthYear >= 2001 ? "Yeah, they can drink." : "Drink in Europe."
 
 print(birthYear >= 2001 ? "Yeah, they can drink." : "Drink in Europe.")
+
+
+// MARK: How to use a for loop to repeat work
+
+enum Trees {
+    case redWood, birch, oak, palm
+}
+
+var treeTypes: [Trees] = [.birch]
+
+treeTypes.append(.oak)
+treeTypes.append(.palm)
+
+
+for tree in treeTypes { // NOTE: the "tree" in the for loop is called the loop variable.
+    print("I that that tree is a \(tree)")
+    // NOTE: this is called the loop body.
+}
+
+
+var countingNumbers = [1, 2, 3, 4, 5]
+
+for number in countingNumbers {
+    print("I can count to \(number)")
+}
+
+var names = ["Fredie", "James", "Orion", "Simaya", "Vivian"]
+
+for name in names {
+    print("I know \(name)")
+}
+
+
+
+
+var countries = ["United States", "United Kingdom", "United Arab Emerates", "Algeria"]
+
+for country in countries {
+    print("I've been to \(country)")
+}
+
+enum Footware {
+    case boots, sandals, churchShoes, hoopingShoes
+}
+
+var shoes: [Footware] = []
+
+
+for shoe in shoes {
+    print("I like to wear \(shoe)")
+}
+
+
+
+var drinkChoice: [String] = ["Manhattan Classic", "Gin and Tonic", "NA Drink"]
+
+for drink in drinkChoice {
+    print("My drink of choice is \(drink)")
+}
+
+
+var kwanzaaPrinciples = [
+    
+    "Umojo" : "Unity",
+    "Kugichgulia": "Self Determination",
+    "Ujima" : "Collective work and responsiblity",
+    "Ujimma" : "Cooperative economics",
+    "Nia" : "Purpose",
+    "Kuumba" : "Creativity",
+    "Imani" : "Faith"
+
+]
+
+for kwanzaa in kwanzaaPrinciples {
+    print("The principles of Kwanzaa are \(kwanzaa)")
+}
+
+
+
+
+
+var weatherConditions = ["☁️", "🌤️", "🌧️", "☀️", "❄️"]
+
+for weather in weatherConditions {
+    print("The weather in Michigan can \(weather).")
+}
+
+

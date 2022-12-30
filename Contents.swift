@@ -859,3 +859,30 @@ case "Courasant":
 default:
     print("What planet are we on?")
 }
+
+
+// MARK: How to Use the Ternary Conditional Operator for Quick Tests
+
+var trip = "Miami"
+
+let isCaliBound = trip == "California" ? "Yes" : "No"
+
+
+let favCharacter = "Jason Bourne"
+
+let goSeeMovie = favCharacter != "Jason Bourne" ? "No, I'm not going to the movie." : "Yeah, I'm going to the movie."
+
+
+
+let meal = "Tasty!"
+
+let mealIsTasty = meal != "Tasty!" ?  "No, it was awful!" : "Yes, it was tasty."
+
+
+
+
+let birthYear = 2001
+
+let canDrink = birthYear >= 2001 ? "Yeah, they can drink." : "Drink in Europe."
+
+print(birthYear >= 2001 ? "Yeah, they can drink." : "Drink in Europe.")
